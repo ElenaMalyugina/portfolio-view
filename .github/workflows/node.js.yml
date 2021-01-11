@@ -16,9 +16,7 @@ jobs:
           npm run test
           npm run build
       - name: Deploy site to gh-pages branch
-        env: 
-          GH_PAT: d1adf09408005beec611118c380ac85b1bb80c9f 
         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
         with: 
-          repo-token: ${{ secrets.GH_PAT }}
+          repo-token: d1adf09408005beec611118c380ac85b1bb80c9f
         
