@@ -10,7 +10,12 @@ html(lang="en")
   body
     .wrapper
       .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
-        h1 TEST
+        include landing/section_top
+        include landing/skills
+        include landing/my-works
+        include landing/reviews
+        include landing/footer
+        //-+image('content/user.jpg', 'user-pic')
+        //-+icon('link', 'link-class')
+        //-.icon-bg
+        

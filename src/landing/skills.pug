@@ -1,0 +1,34 @@
+-
+    var skills = [
+        {
+            name: "Frontend",
+            skills: [
+                {name: "HTML5"},
+                {name: "CSS3"},
+                {name: "Javascript"},
+                {name: "JQuery & Vue.js"}
+            ]
+        },
+        {
+            name: "Workflow",
+            skills: [
+                {name: "Git"},
+                {name: "Terminal"},
+                {name: "Gulp"},
+                {name: "Webpack"}
+            ]
+        } 
+    
+               ]
+
+section.skills
+    h2 Чем я могу быть полезен вам
+    .skills__site | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                  | Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    each skillType in skills
+        h3 #{skillType.name}
+        ul
+        each skill in skillType.skills
+            li #{skill.name}
+
+        

@@ -1,0 +1,51 @@
+-
+    var navItems=[
+        "Обо мне",
+        "Навыки",
+        "Работы",
+        "Отзывы"
+    ]
+
+-
+    var socials = [
+        {
+            icon: "insta",
+            title: "Instagram",
+            href: "#"
+        }, 
+        {
+            icon: "github",
+            title: "Github",
+            href: "#"
+        },
+        {
+            icon: "github",
+            title: "Github",
+            href: "#"
+        },
+        {
+            icon: "vk",
+            title: "Вконтакте",
+            href: "#"
+        },
+        {
+            icon: "envelope",
+            title: "email",
+            href: "#"
+        }
+    ]    
+
+
+
+header
+    .inintials ЕМ
+    nav.nav
+        ul.nav__list
+            each item in navItems 
+                li.nav__item 
+                    a(href="#").nav__link #{item}
+    ul.socials__list
+        each social in socials 
+            li(title=social.title).social__item
+                a(href=social.href) 
+                    +icon(social.icon, '')
